@@ -1,0 +1,205 @@
+/* Reset básico */
+body, h1, input, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+}
+
+/* Contêiner do formulário */
+.caixa-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 300px;
+    color: #333;
+}
+
+/* Estilização do formulário */
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.cadastro-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Campos do formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #6a11cb;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #2575fc;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.acao-voltar {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.botao-voltar {
+    width: 100%;
+    padding: 10px;
+    background: #6a11cb;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.botao-voltar:hover {
+    background-color: #d32f2f;
+}
+
+/* Estilo para a box de sucesso */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color:#6a11cb;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo para o link de voltar ao login com a seta */
+.voltarz {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007BFF; /* Cor da seta e do texto */
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.voltarz:hover {
+    color: #0056b3; /* Cor ao passar o mouse */
+}
+
+.voltarz::before {
+    content: "\2190"; /* Código da seta para a esquerda */
+    margin-right: 8px; /* Espaço entre a seta e o texto */
+    font-size: 25px; /* Tamanho da seta */
+}
+
+/* Centraliza o conteúdo da página */
+.home-container {
+    text-align: center;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo do GIF */
+.gif-container {
+    margin-top: 20px;
+}
+
+.gif {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+/* Botão de voltar */
+.acao-voltarhome {
+    position: absolute;
+    bottom: 20px; /* Distância do botão ao fundo da página */
+    left: 20px; /* Distância do botão à lateral esquerda */
+}
+
+.voltarx {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff; /* Cor da seta e do texto */
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.voltarx:hover {
+    color: #0056b3; /* Cor ao passar o mouse */
+}
+
+.voltarx::before {
+    content: "\2190"; /* Código da seta para a esquerda */
+    margin-right: 8px; /* Espaço entre a seta e o texto */
+    font-size: 25px; /* Tamanho da seta */
+}
